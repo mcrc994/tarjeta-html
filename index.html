@@ -4,62 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta Responsive</title>
+    <title>Tarjeta</title>
 
     <style>
-        /* IMPORTANTE: box-sizing */
         * {
             box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
+            font-family: Arial;
+            background: #f0f0f0;
             display: flex;
             justify-content: center;
-            padding: 20px;
+            align-items: center;
+            height: 100vh;
         }
 
         .card {
             background: white;
             max-width: 320px;
             width: 100%;
-            border-radius: 12px;
             padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
-        .card h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            font-size: 14px;
-            margin-bottom: 15px;
-            color: #555;
-        }
-
-        .card button {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            background: #007BFF;
+        .btn {
+            display: block;
+            background: blue;
             color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .card button:hover {
-            background: #0056b3;
-        }
-
-        /* Responsive (aunque ya está adaptado) */
-        @media (max-width: 400px) {
-            .card {
-                padding: 15px;
-            }
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -67,9 +43,9 @@
 <body>
 
     <div class="card">
-        <h2>Curso de HTML y CSS</h2>
-        <p>Aprende a crear páginas web modernas desde cero con diseño responsive.</p>
-        <button>Inscribirme</button>
+        <h2>Curso HTML</h2>
+        <p>Aprende a crear páginas web fáciles.</p>
+        <a href="#" class="btn">Inscribirme</a>
     </div>
 
 </body>
