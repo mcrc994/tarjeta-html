@@ -1,93 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tarjeta Bonita</title>
-
-<style>
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* TARJETA */
-.card {
-    background: white;
-    max-width: 320px;
-    width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* IMAGEN */
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-/* CONTENIDO */
-.card-content {
-    padding: 20px;
-    text-align: center;
-}
-
-.card h2 {
-    margin: 10px 0;
-    color: #333;
-}
-
-.card p {
-    color: #666;
-    font-size: 14px;
-}
-
-/* BOTÓN */
-.btn {
-    display: block;
-    margin-top: 15px;
-    padding: 12px;
-    background: linear-gradient(45deg, #ff6a00, #ee0979);
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    opacity: 0.8;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<div class="card">
-    <img src="https://picsum.photos/400/200" alt="imagen">
+    <h2>Tabla con Flexbox</h2>
 
-    <div class="card-content">
-        <h2>Curso de HTML 💻</h2>
-        <p>Aprende a crear páginas web modernas, bonitas y profesionales desde cero.</p>
-        <a href="#" class="btn">Inscribirme</a>
+    <div class="tabla-flex">
+        <div class="fila">
+            <div class="celda">Nombre</div>
+            <div class="celda">Edad</div>
+        </div>
+
+        <div class="fila">
+            <div class="celda">María</div>
+            <div class="celda">31</div>
+        </div>
     </div>
-</div>
+
+    <h2>Tabla con Grid</h2>
+
+    <div class="tabla-grid">
+        <div>Nombre</div>
+        <div>Edad</div>
+        <div>María</div>
+        <div>31</div>
+    </div>
 
 </body>
+
 </html>

@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.tabla-flex {
+    max-width: 320px;
+}
+
+.fila {
+    display: flex;
+}
+
+.celda {
+    flex: 1;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tabla-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 320px;
+}
+
+.tabla-grid div {
+    border: 1px solid black;
+    padding: 10px;
+}
